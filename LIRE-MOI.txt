@@ -1,0 +1,41 @@
+LES FILS DU RÉCIT — CODE DU SITE
+
+Cette archive contient le site complet, avec le mode sombre.
+
+FICHIERS
+- index.html : la page et le chargement du thème mémorisé.
+- style.css : la mise en page responsive et les thèmes clair / sombre.
+- app.js : les personnages, cartes, relations, notes, carnets et sauvegardes.
+
+OUVRIR LE SITE
+1. Décompresse cette archive.
+2. Ouvre le dossier les-fils-du-recit.
+3. Ouvre index.html avec un navigateur récent.
+
+Pour un fonctionnement local plus stable, tu peux lancer un petit serveur :
+  python3 -m http.server 8000
+Puis ouvrir http://localhost:8000 dans ton navigateur.
+Sur Windows, utilise python à la place de python3 si nécessaire.
+
+MODIFIER LE SITE
+Modifie les trois fichiers avec ton éditeur de code, puis recharge la page.
+Aucune installation de dépendances et aucune compilation ne sont nécessaires.
+Pour le mettre en ligne, héberge les trois fichiers ensemble sur un hébergement statique.
+
+FONCTIONNALITÉS
+- Fiches de personnages : caractère, histoire, âge, rôle, motivations, notes.
+- Carte mentale : déplacement des fiches, zoom, navigation et relations.
+- Carnets séparés pour plusieurs livres.
+- Notes générales ou associées à un personnage.
+- Export et import des carnets au format JSON.
+- Mode sombre avec préférence mémorisée.
+
+DONNÉES
+Les carnets sont sauvegardés dans le navigateur, sur cet appareil et pour cette adresse.
+Cette archive contient le code et le carnet d'exemple, pas tes données personnelles.
+Pour retrouver tes carnets sur cette copie du site, utilise Exporter sur le site actuel,
+puis Réglages > Importer sur cette copie. Le choix du thème se règle séparément.
+
+POLICES
+Les polices sont chargées depuis Google Fonts si Internet est disponible.
+Sinon, le navigateur utilise les polices de remplacement prévues dans le CSS.

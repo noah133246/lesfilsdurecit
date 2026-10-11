@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f6f0">
+  <script>
+    try { document.documentElement.dataset.theme = localStorage.getItem('fils-du-recit-theme') === 'dark' ? 'dark' : 'light'; }
+    catch { document.documentElement.dataset.theme = 'light'; }
+    if (document.documentElement.dataset.theme === 'dark') document.querySelector('meta[name="theme-color"]').content = '#1c2520';
+  </script>
+  <meta name="description" content="Donnez vie à vos personnages : fiches, notes et cartes de leurs relations dans un atelier d’écriture personnel.">
+  <title>Les fils du récit — Atelier de personnages</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div id="app"></div>
+  <dialog id="modal"></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <input id="import-file" type="file" accept="application/json,.json" hidden>
+</body>
+</html>
